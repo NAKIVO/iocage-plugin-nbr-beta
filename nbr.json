@@ -9,10 +9,8 @@
         "mount_procfs": "1",
         "boot": "on"
     },
-    "pkgs": [
-        "ftp/curl"
-    ],
-    "packagesite": "http://pkg.freebsd.org/${ABI}/release_5",
+    "pkgs": [],
+    "packagesite": "http://pkg.freebsd.org/${ABI}/quarterly",
     "fingerprints": {
         "plugin-default": [
                 {
