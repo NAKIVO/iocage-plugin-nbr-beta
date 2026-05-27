@@ -12,7 +12,7 @@
     "pkgs": [
         "ftp/curl"
     ],
-    "packagesite": "http://pkg.freebsd.org/${ABI}/quarterly",
+    "packagesite": "http://pkg.freebsd.org/${ABI}/release_5",
     "fingerprints": {
         "plugin-default": [
                 {
