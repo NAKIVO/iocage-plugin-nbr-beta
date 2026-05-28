@@ -1,13 +1,13 @@
 #!/bin/sh
 
 PRODUCT='NAKIVO Backup & Replication (Beta)'
-URL="https://d96i82q710b04.cloudfront.net/res/product/beta/NAKIVO_Backup_Replication_v10.0.0.44587_Installer-BETA.sh"
-SHA256="72f265cf34165dff28a8e22e757122a0d269dfd8fdbebfaee11b6f309c902804"
+URL="https://d111xps0uy3x00.cloudfront.net/res/product/NAKIVO_Backup_Replication_v11.2.1.104620_Installer-TRIAL.sh"
+SHA256="fd7b717b957adc66b75f4f899b70761d7a3b3d11a9d28addbad211e42a3e2bfa"
 
 PRODUCT_ROOT="/usr/local/nakivo"
 INSTALL="inst.sh"
 
-curl --fail --tlsv1.2 -o $INSTALL $URL
+fetch -o $INSTALL "$URL"
 if [ $? -ne 0 -o ! -e $INSTALL ]; then
     echo "ERROR: Failed to get $PRODUCT installer"
     rm $INSTALL >/dev/null 2>&1
